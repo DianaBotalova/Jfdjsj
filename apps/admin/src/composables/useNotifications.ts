@@ -35,19 +35,19 @@ export function useNotifications() {
     }
   }
 
-  function success(title: string, message: string) {
+  function success(title: string, message: string = '') {
     addNotification('success', title, message);
   }
 
-  function error(title: string, message: string) {
+  function error(title: string, message: string = '') {
     addNotification('error', title, message);
   }
 
-  function warning(title: string, message: string) {
+  function warning(title: string, message: string = '') {
     addNotification('warning', title, message);
   }
 
-  function info(title: string, message: string) {
+  function info(title: string, message: string = '') {
     addNotification('info', title, message);
   }
 
